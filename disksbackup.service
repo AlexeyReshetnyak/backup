@@ -1,0 +1,13 @@
+[Unit]
+Description=Backup script
+RequiresMountsFor=/run/media /run/media/al/flash32g
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=/bin/bash /home/al/projects/backup/flash_backup.sh
+TimeoutSec=infinity
+
+[Install]
+WantedBy=multi-user.target
