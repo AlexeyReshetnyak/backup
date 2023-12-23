@@ -32,6 +32,17 @@ $HOME_NAME/.vimrc \
 #  echo $result > ~/.files_backup.log
 #  exit
 #fi
+#
+
+mountpoint=$(lsblk -o MOUNTPOINT | grep $FLASH_DRIVE_NAME)
+if [[ -n $mountpoint ]]
+then
+  :
+else
+  echo "Error. Drive not mounted" > $HOME_NAME/.dirs_backup.log
+  echo "Error. Drive not mounted" > $HOME_NAME/.files_backup.log
+  exit 0
+fi
 
 if [ ! -d $MOUNT_DIR$BACKUP_DIR ]
 then
