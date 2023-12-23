@@ -16,7 +16,7 @@ $HOME_NAME/projects \
 $HOME_NAME/.vim \
 $HOME_NAME/.local/share/gnome-shell/extensions \
 $HOME_NAME/.gnupg \
-$HOME_NAME/.config/sway \
+$HOME_NAME/.config \
 $HOME_NAME/.mozilla/firefox \
 $HOME_NAME/.thunderbird \
 $HOME_NAME/.local/share/themes)
