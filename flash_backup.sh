@@ -51,7 +51,7 @@ then
       fi
       echo ${x}
       echo $MOUNT_DIR$BACKUP_DIR/${x}
-      $RSYNC --perms -vrlt --delete --delete-excluded /${x}/ \
+      $RSYNC --perms -vrltaog --delete --delete-excluded /${x}/ \
         $MOUNT_DIR$BACKUP_DIR/${x} > $HOME_NAME/.backup.log 2>&1
       done
 
@@ -66,7 +66,7 @@ else
         then
           mkdir -p ${x}
         fi
-#        $RSYNC --perms -vrlt --delete --delete-excluded $MOUNT_DIR$BACKUP_DIR/${x} ${x}/ > $HOME_NAME/.backup.log 2>&1
+#        $RSYNC --perms -vrltaog --delete --delete-excluded $MOUNT_DIR$BACKUP_DIR/${x} ${x}/ > $HOME_NAME/.backup.log 2>&1
         done
     fi
 fi
