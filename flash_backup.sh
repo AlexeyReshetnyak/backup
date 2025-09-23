@@ -38,7 +38,6 @@ fi
 if [[ ! -n $1 ]];
 then
     echo "No parameter passed."
-    exit 0
     if [ ! -d $MOUNT_DIR$BACKUP_DIR ]
     then
       mkdir -p $MOUNT_DIR$BACKUP_DIR
