@@ -1,6 +1,6 @@
 [Unit]
 Description=Backup script
-RequiresMountsFor=/run/media /run/media/al/flash32g
+RequiresMountsFor=/media /media/al/card32g
 
 [Service]
 Type=oneshot
