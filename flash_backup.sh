@@ -12,7 +12,6 @@ $HOME_NAME/Downloads \
 $HOME_NAME/Documents \
 $HOME_NAME/projects \
 $HOME_NAME/.vim \
-$HOME_NAME/.local/share/gnome-shell/extensions \
 $HOME_NAME/.gnupg \
 $HOME_NAME/.config \
 $HOME_NAME/.mozilla/firefox \
