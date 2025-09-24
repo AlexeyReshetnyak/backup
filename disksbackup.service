@@ -1,12 +1,17 @@
 [Unit]
 Description=Backup script
-RequiresMountsFor=/media /media/al/card32g
+RequiresMountsFor=/media /media/al/backup_drive
 
 [Service]
 Type=oneshot
 RemainAfterExit=true
 ExecStart=/bin/true
-ExecStop=/bin/bash /home/al/projects/backup/flash_backup.sh
+ExecStop=flash_backup.sh \
+ -u "/home/al" \
+ -d "/home/al/Documents /home/al/Downloads /home/al/projects /home/al/.vim /home/al/.gnupg /home/al/.config /home/al/.mozilla/firefox /home/al/.thunderbird" \
+ -m "/media/al/backup_drive" \
+ -f backup_drive \
+ -s n
 TimeoutSec=infinity
 
 [Install]

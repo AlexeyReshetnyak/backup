@@ -2,7 +2,7 @@
 Name=notify_backup_errors
 GenericName=notify_backup_errors
 Comment=
-Exec=/home/al/projects/backup/notify_backup_errors.sh
+Exec=notify_backup_errors.sh
 Terminal=false
 Type=Application
 X-GNOME-Autostart-enabled=true
