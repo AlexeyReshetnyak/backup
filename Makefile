@@ -9,6 +9,7 @@ install:
 	sudo systemctl start disksbackup.service 
 	cp -v notify_backup_errors.desktop ~/.config/autostart/
 	sudo cp -v flash_backup.sh /usr/local/bin
+	mkdir -p ~/bin
 	cp -v notify_backup_errors.sh ~/bin
 	sudo systemctl status disksbackup.service
 	
